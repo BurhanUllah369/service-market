@@ -126,9 +126,10 @@ const Nav = () => {
         </section>
       </section>
       <section
+      style={{transition: "0.7s ease"}}
         className={`${
-          menu ? "absolute" : "hidden"
-        } w-full h-dvh lg:h-auto sm:w-3/4 md:w-1/3 lg:w-2/3 xl:w-1/2 top-0 lg:top-20 left-0 lg:left-12 lg:px-12 pt-12 lg:pt-8 pb-12 bg-white shadow-2xl rounded-sm lg:rounded-t-r-3xl overflow-y-scroll lg:overflow-hidden`}
+          menu ? "left-0 lg:absolute" : "-left-full lg:hidden"
+        } w-full h-dvh lg:h-auto sm:w-3/4 md:w-1/3 lg:w-2/3 xl:w-1/2 absolute top-0 lg:top-20  lg:left-12 lg:px-12 pt-12 lg:pt-8 pb-12 bg-white shadow-2xl rounded-sm lg:rounded-t-r-3xl overflow-y-scroll lg:overflow-hidden`}
       >
         <button
           onClick={() => setMenu(false)}
