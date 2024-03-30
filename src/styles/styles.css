@@ -1,0 +1,47 @@
+.swiper-button-prev,
+.swiper-button-next {
+  top: 45%;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-scrollbar {
+    display: none !important;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+.slider-scrollbar {
+  overflow-x: scroll;
+}
+
+.footer {
+  background-image: url("../assets/footer-bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-slide > div {
+  margin: 0 12px;
+}
+.slick-list {
+  margin: 0 -12px;
+}
+
+@media screen and (max-width: 475px) {
+  .slick-slide > div {
+    margin: 0 6px;
+  }
+  .slick-list {
+    margin: 0 -6px;
+  }
+}
